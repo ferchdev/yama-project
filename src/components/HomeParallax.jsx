@@ -4,7 +4,7 @@ import promo from "../assets/images/promo.png";
 export const HomeParallax = () => {
     return (
         <section className="home-parallax w-[100%] relative">
-            <Parallax strength={300} bgImage={backY} bgStyle={{'background-color' : '#191f2b'}} bgImageStyle={{'left':'100px','width':'auto','height':'100vh','bottom':'-60%'}} style={{'background-color' : '#191f2b', 'width' : '100%', 'height' : 'auto'}}>
+            <Parallax strength={300} bgImage={backY} bgStyle={{'backgroundColor' : '#191f2b'}} bgImageStyle={{'left':'100px','width':'auto','height':'100vh','bottom':'-60%'}} style={{'backgroundColor' : '#191f2b', 'width' : '100%', 'height' : 'auto'}}>
                 {/* <div className="w-full pt-[50px] sm:pt-[70px] flex items-end" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
                 <img src={promo} alt="imagen de banner promocional" className="mx-auto  w-[80%] sm:w-[70%] h-[auto]"></img>
                 </div> */}
