@@ -1,6 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Home } from "./components/home";
+import { Home } from "./components/Home";
 import { useEffect } from "react";
 
 function App() {
@@ -12,9 +12,7 @@ function App() {
     AOS.refresh();
   }, []);
   return (
-    <>
       <Home />
-    </>
   );
 }
 
