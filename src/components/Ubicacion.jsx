@@ -1,3 +1,4 @@
+import mapa from "../assets/images/map.png";
 export const Ubicacion = () => {
   return (
     <section className="ubicacion pt-[90px] w-[90%] mx-auto max-w-[1366px]">
@@ -11,7 +12,7 @@ export const Ubicacion = () => {
       </div>
         <div className="xl:flex gap-10" data-aos="fade-up">
           <img
-            src="src/assets/images/map.png"
+            src={mapa}
             alt="imagen de mapa"
             className="w-full sm:h-[450px] object-cover"
           />

@@ -1,4 +1,8 @@
 import insurgentes from "../assets/images/insurgentes-reforma1.jpg";
+import m2 from "../assets/icons/m2.png";
+import bed from "../assets/icons/habitacion.png";
+import toilet from "../assets/icons/toilet.png";
+import tour from "../assets/icons/360-grados.png";
 export const ReformaBanner = () => {
   return (
     <section className="reforma-banner pt-[80px] w-[90%] sm:w-[95%] mx-auto max-w-[1366px]">
@@ -8,7 +12,7 @@ export const ReformaBanner = () => {
       >
         <p>
           <img
-            src="src/assets/icons/m2.png"
+            src={m2}
             alt="imagen de metro cuadrado"
             className="me-3"
           />
@@ -16,14 +20,14 @@ export const ReformaBanner = () => {
         </p>
         <p>
           <img
-            src="src/assets/icons/habitacion.png"
+            src={bed}
             alt="imagen de metro habitacion"
             className="me-3"
           />
           1 - 2
         </p>
         <p>
-          <img src="src/assets/icons/toilet.png" className="me-3 w-[48px]" />2 -
+          <img src={toilet} className="me-3 w-[48px]" />2 -
           4
         </p>
       </div>
@@ -55,7 +59,7 @@ export const ReformaBanner = () => {
             zona.
           </p>
           <button className="w-full bg-[#2e2e2e] text-[#f58127]  tracking-widest text-xl font-normal py-2 flex items-center justify-center gap-4 mt-[35px]  hover:bg-[#242424] transition-all duration-300">
-            <img src="src/assets/icons/360-grados.png" className="w-[45px]" />
+            <img src={tour} className="w-[45px]" />
             <span className="text-white">Tour 360°</span>
           </button>
         </div>

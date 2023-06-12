@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
+import logo from "../assets/icons/logo.png";
+import logo2 from "../assets/icons/logo2.png";
 import { BottomBar } from "./BottomBar";
 export const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,7 +29,7 @@ export const Footer = () => {
         data-aos="zoom-in"
       >
         <img
-          src="src/assets/icons/logo.png"
+          src={logo}
           className=" w-[120px] lg:w-[80px] z-[20]"
         />
         <ul className="text-center  text-xl flex flex-col gap-4 md:text-start lg:flex lg:flex-row md:grid md:grid-cols-2 md:text-lg tracking-wider md:gap-x-16 md:gap-y-2 md:lg:gap-7 z-[20]">
@@ -75,7 +77,7 @@ export const Footer = () => {
             </a>
           </li>
         </ul>
-        <img src="src/assets/icons/logo2.png" className="hidden lg:block absolute top-0 left-0 z-[1] w-[320px]"/>
+        <img src={logo2} className="hidden lg:block absolute top-0 left-0 z-[1] w-[320px]"/>
       </footer>
       <BottomBar hidden={isVisible} />
     </>

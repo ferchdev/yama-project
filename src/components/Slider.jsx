@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import slider1 from "../assets/images/slider/carousel1.png";
+import slider2 from "../assets/images/slider/carousel2.jpg";
+import slider3 from "../assets/images/slider/carousel3.jpg";
 function Slider() {
   const slides = [
     {
-      url: "/src/assets/images/slider/carousel1.png",
+      url: slider1,
     },
     {
-      url: "/src/assets/images/slider/carousel2.jpg",
+      url: slider2,
     },
     {
-      url: "/src/assets/images/slider/carousel3.jpg",
+      url: slider3,
     },
   ];
 
