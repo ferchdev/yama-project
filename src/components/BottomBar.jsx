@@ -1,14 +1,15 @@
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-export const BottomBar = () => {
+import { TfiEmail } from "react-icons/tfi";
+export const BottomBar = ({hidden = false}) => {
   return (
     <section
-      className="bottom-bar fixed flex flex-col gap-1 bottom-[25px] text-white w-fit left-0 right-0 mx-auto"
+      className={`${hidden && "hidden"} bottom-bar fixed flex flex-col gap-1 bottom-[25px] text-white w-fit left-0 right-0 mx-auto transition-all duration-500`}
       data-aos="fade-up"
+      data-aos-offset="-200"
     >
-      <span className="bg-[#181d27d5] px-5 py-1 rounded-lg text-xs w-fit">
+      <span className="absolute top-[-28px] bg-[#181d27d5] px-5 py-1 rounded-lg text-xs w-fit">
         Venta / Renta
       </span>
       <div className="bar flex gap-4 bg-[#181d27d5] p-2 h-auto w-auto rounded-xl text-xs tracking-widest">
@@ -36,7 +37,7 @@ export const BottomBar = () => {
             href="#"
             className="h-[98%] px-3 border rounded-lg border-[#563b28] flex justify-center items-center hover:bg-[#d46e1b] hover:border-[#d46e1b] hover:text-[#181d27] hover:translate-y-[-15px] transition-all duration-300"
           >
-            <FontAwesomeIcon icon={faEnvelope} className="text-3xl" />
+            <TfiEmail className="text-3xl" />
           </a>
           <a
             href="#"

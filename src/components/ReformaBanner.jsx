@@ -1,38 +1,30 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import insurgentes from "../assets/images/insurgentes-reforma1.jpg";
-import {
-  faAtom,
-  faBed,
-  faRulerCombined,
-  faToilet,
-} from "@fortawesome/free-solid-svg-icons";
 export const ReformaBanner = () => {
   return (
-    <section className="reforma-banner pt-[80px] pb-[120px]  w-[90%] sm:w-[95%] mx-auto max-w-[1366px]">
+    <section className="reforma-banner pt-[80px] w-[90%] sm:w-[95%] mx-auto max-w-[1366px]">
       <div
-        className="flex flex-col sm:flex-row gap-10 sm:gap-5 md:gap-8 text-3xl justify-center items-start sm:items-center tracking-widest [&>p]:text-[#2e2e2e] font-normal [&>p]:flex [&>p]:items-center [&>p]:justify-center"
+        className="flex flex-col sm:flex-row gap-10 sm:gap-5 md:gap-8 text-2xl sm:text-3xl justify-center items-start sm:items-center tracking-widest [&>p]:text-[#2e2e2e] font-normal [&>p]:flex [&>p]:items-center [&>p]:justify-center"
         data-aos="zoom-in"
       >
         <p>
-          <FontAwesomeIcon
-            icon={faRulerCombined}
-            className="me-3 text-[#de802e] text-3xl sm:text-5xl"
+          <img
+            src="src/assets/icons/m2.png"
+            alt="imagen de metro cuadrado"
+            className="me-3"
           />
           Desde 80m<sup>2</sup>
         </p>
         <p>
-          <FontAwesomeIcon
-            icon={faBed}
-            className="me-3 text-[#de802e] text-3xl sm:text-5xl"
+          <img
+            src="src/assets/icons/habitacion.png"
+            alt="imagen de metro habitacion"
+            className="me-3"
           />
           1 - 2
         </p>
         <p>
-          <FontAwesomeIcon
-            icon={faToilet}
-            className="me-3 text-[#de802e] text-3xl sm:text-5xl"
-          />
-          2 - 4
+          <img src="src/assets/icons/toilet.png" className="me-3 w-[48px]" />2 -
+          4
         </p>
       </div>
       <div className="lg:flex pt-[80px] gap-10 justify-center">
@@ -63,7 +55,7 @@ export const ReformaBanner = () => {
             zona.
           </p>
           <button className="w-full bg-[#2e2e2e] text-[#f58127]  tracking-widest text-xl font-normal py-2 flex items-center justify-center gap-4 mt-[35px]  hover:bg-[#242424] transition-all duration-300">
-            <FontAwesomeIcon icon={faAtom} className="text-5xl" />
+            <img src="src/assets/icons/360-grados.png" className="w-[45px]" />
             <span className="text-white">Tour 360°</span>
           </button>
         </div>

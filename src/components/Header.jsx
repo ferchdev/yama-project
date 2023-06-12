@@ -1,7 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../assets/logo.svg";
-import { faAngleDown, faBars } from "@fortawesome/free-solid-svg-icons";
 import { useRef } from "react";
+import { VscChevronDown } from "react-icons/vsc";
+import { RxHamburgerMenu } from "react-icons/rx";
 export const Header = () => {
   const degradedRef1 = useRef();
   const degradedRef2 = useRef();
@@ -30,17 +30,18 @@ export const Header = () => {
         <div className="flex gap-5 text-white text-xl font-light tracking-wider h-full items-center">
           <ul className="text-white hidden lg:flex h-full">
             <li
-              className="borderNav px-7"
+              className="borderNav ps-7 pe-4"
               onMouseOver={() => handleOnMouseover(degradedRef1, arrowRef1)}
               onMouseLeave={() => handleOnMouseleave(degradedRef1, arrowRef1)}
             >
               <a href="#" className="h-full flex items-center">
                 Corporativo{" "}
-                <FontAwesomeIcon
-                  icon={faAngleDown}
-                  className="text-[#e08637] ms-3 transition-all duration-500"
+                <span
+                  className="ms-3 transition-all duration-500"
                   ref={arrowRef1}
-                />
+                >
+                  <VscChevronDown className="text-[#e08637]" size={25} />
+                </span>
               </a>
             </li>
             <span className="w-[2px] bg-nav relative">
@@ -49,7 +50,7 @@ export const Header = () => {
                 ref={degradedRef1}
               ></span>
             </span>
-            <li className="borderNav px-7 ">
+            <li className="borderNav ps-7 pe-4 ">
               <a
                 href="#"
                 className="h-full flex items-center"
@@ -57,11 +58,12 @@ export const Header = () => {
                 onMouseLeave={() => handleOnMouseleave(degradedRef2, arrowRef2)}
               >
                 Residencial{" "}
-                <FontAwesomeIcon
-                  icon={faAngleDown}
-                  className="text-[#e08637] ms-3 transition-all duration-500"
+                <span
+                  className="ms-3 transition-all duration-500"
                   ref={arrowRef2}
-                />
+                >
+                  <VscChevronDown className="text-[#e08637]" size={25} />
+                </span>
               </a>
             </li>
             <span className="w-[2px] bg-nav relative">
@@ -81,7 +83,7 @@ export const Header = () => {
             href="#"
           >
             <span className="text-white">Menu</span>
-            <FontAwesomeIcon icon={faBars} className="ms-3" />
+            <RxHamburgerMenu className="ms-3" size={25} />
           </a>
         </div>
       </nav>
