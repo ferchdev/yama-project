@@ -5,14 +5,14 @@ import { TfiEmail } from "react-icons/tfi";
 export const BottomBar = ({hidden = false}) => {
   return (
     <section
-      className={`${hidden && "hidden"} bottom-bar fixed hidden lock:flex flex-col gap-1 bottom-[25px] text-white w-fit left-0 right-0 mx-auto transition-all duration-500`}
+      className={`${hidden && "hidden"} bottom-bar fixed flex flex-col gap-1 bottom-[25px] text-white w-fit left-0 right-0 mx-auto transition-all duration-500`}
       data-aos="fade-up"
       data-aos-offset="-200"
     >
-      <span className="absolute top-[-28px] bg-[#181d27d5] px-5 py-1 rounded-lg text-xs w-fit">
+      <span className="hidden lock:block absolute top-[-28px] bg-[#181d27d5] px-5 py-1 rounded-lg text-xs w-fit">
         Venta / Renta
       </span>
-      <div className="bar flex gap-4 bg-[#181d27d5] p-2 h-auto w-auto rounded-xl text-xs tracking-widest">
+      <div className="hidden lock:flex bar  gap-4 bg-[#181d27d5] p-2 h-auto w-auto rounded-xl text-xs tracking-widest">
         <a
           
           className="cursor-pointer w-[145px] h-[58px] button glow-button bg-[#df7925] rounded-xl justify-center items-center transition-all duration-300 hidden sm:flex"
