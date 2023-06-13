@@ -14,40 +14,40 @@ export const BottomBar = ({hidden = false}) => {
       </span>
       <div className="bar flex gap-4 bg-[#181d27d5] p-2 h-auto w-auto rounded-xl text-xs tracking-widest">
         <a
-          href="#"
-          className="w-[145px] h-[58px] bg-[#df7925] rounded-xl justify-center items-center hover:bg-[#d46e1b] transition-[background] duration-300 hidden sm:flex"
+          
+          className="cursor-pointer w-[145px] h-[58px] button glow-button bg-[#df7925] rounded-xl justify-center items-center transition-all duration-300 hidden sm:flex"
         >
           Agendar cita
         </a>
         <div className="flex gap-3 sm:gap-4 bg-[#181d27] py-[4px] px-4 rounded-xl h-[58px] w-[290px] sm:h-auto sm:w-auto">
           <span className="flex justify-center items-center">Contacto:</span>
           <a
-            href="#"
-            className="h-[98%] px-3 border rounded-lg border-[#563b28] flex justify-center items-center hover:bg-[#d46e1b]  hover:border-[#d46e1b] hover:text-[#181d27] hover:translate-y-[-15px] transition-all duration-300"
+            
+            className="cursor-pointer h-[98%] px-3 border rounded-lg border-[#563b28] flex justify-center items-center hover:bg-[#d46e1b]  hover:border-[#d46e1b] hover:text-[#181d27] hover:translate-y-[-15px] transition-all duration-300"
           >
             <FontAwesomeIcon icon={faWhatsapp} className="text-3xl" />
           </a>
           <a
-            href="#"
-            className="h-[98%] px-3 border rounded-lg border-[#563b28] flex justify-center items-center hover:bg-[#d46e1b] hover:border-[#d46e1b] hover:text-[#181d27] hover:translate-y-[-15px] transition-all duration-300"
+            
+            className="cursor-pointer h-[98%] px-3 border rounded-lg border-[#563b28] flex justify-center items-center hover:bg-[#d46e1b] hover:border-[#d46e1b] hover:text-[#181d27] hover:translate-y-[-15px] transition-all duration-300"
           >
             <FontAwesomeIcon icon={faPhone} className="text-2xl" />
           </a>
           <a
-            href="#"
-            className="h-[98%] px-3 border rounded-lg border-[#563b28] flex justify-center items-center hover:bg-[#d46e1b] hover:border-[#d46e1b] hover:text-[#181d27] hover:translate-y-[-15px] transition-all duration-300"
+            
+            className="cursor-pointer h-[98%] px-3 border rounded-lg border-[#563b28] flex justify-center items-center hover:bg-[#d46e1b] hover:border-[#d46e1b] hover:text-[#181d27] hover:translate-y-[-15px] transition-all duration-300"
           >
             <TfiEmail className="text-3xl" />
           </a>
           <a
-            href="#"
-            className="h-[98%] px-3 border rounded-lg border-[#563b28] justify-center items-center hover:bg-[#d46e1b] transition-[all] duration-300 hidden md:flex"
+            
+            className="cursor-pointer h-[98%] px-3 border rounded-lg border-[#563b28] justify-center items-center hover:bg-[#d46e1b] transition-[all] duration-300 hidden md:flex"
           >
             Brochure
           </a>
           <a
-            href="#"
-            className="h-[98%] px-3 border rounded-lg border-[#563b28] justify-center items-center hover:bg-[#d46e1b] transition-[all] duration-300 hidden md:flex"
+            
+            className="cursor-pointer h-[98%] px-3 border rounded-lg border-[#563b28] justify-center items-center hover:bg-[#d46e1b] transition-[all] duration-300 hidden md:flex"
           >
             Disponibilidad
           </a>

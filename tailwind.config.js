@@ -5,12 +5,15 @@ export default {
     extend: {
       colors: {
         primary: "#191f2b",
-        bordercolor: "#e08637",
       },
       backgroundImage: {
         nav: "linear-gradient(#0000000e, #e08637, #e08637, #e08637,#0000000e);",
-        "principal-banner": "url('/src/assets/banners/banner.png')",
+        bordercolor:"linear-gradient(#0000000e, #e08637, #e08637, #e08637,#0000000e);",
+        "principal-banner": "url('/src/assets/images/insurgentes-reforma1.jpg')",
       },
+      boxShadow: {
+        'grow': '0 35px 60px -15px #e08637',
+      }
     },
   },
   plugins: [],

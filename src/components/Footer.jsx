@@ -26,53 +26,52 @@ export const Footer = () => {
       <footer
         className="footer relative overflow-hidden mt-[60px] pt-7 pb-2 bg-primary text-white flex flex-col gap-12 md:flex-row lg:flex-col px-8 lg:px-0 justify-between lg:justify-center lg:gap-7 items-center z-[999999999999999999999999999]"
         id="footer"
-        data-aos="zoom-in"
       >
         <img
           src={logo}
           className=" w-[120px] lg:w-[80px] z-[20]"
         />
-        <ul className="text-center  text-xl flex flex-col gap-4 md:text-start lg:flex lg:flex-row md:grid md:grid-cols-2 md:text-lg tracking-wider md:gap-x-16 md:gap-y-2 md:lg:gap-7 z-[20]">
+        <ul className="text-center  text-xl flex flex-col gap-4 md:text-start lg:flex lg:flex-row md:grid md:grid-cols-2 md:text-lg tracking-wider md:gap-x-16 md:gap-y-2 md:lg:gap-7 z-[20] [&>li>a]:cursor-pointer">
           <li className="hover:text-[#f47f21] transition-all duration-300">
-            <a href="#">Inicio</a>
+            <a>Inicio</a>
           </li>
           <li className="hover:text-[#f47f21] transition-all duration-300">
-            <a href="#">Corporativo</a>
+            <a>Corporativo</a>
           </li>
           <li className="hover:text-[#f47f21] transition-all duration-300">
-            <a href="#">Residencial</a>
+            <a>Residencial</a>
           </li>
           <li className="hover:text-[#f47f21] transition-all duration-300">
-            <a href="#">Club Yama</a>
+            <a>Club Yama</a>
           </li>
           <li className="hover:text-[#f47f21] transition-all duration-300">
-            <a href="#">Promociones</a>
+            <a>Promociones</a>
           </li>
           <li className="hover:text-[#f47f21] transition-all duration-300">
-            <a href="#">Certificaciones</a>
+            <a>Certificaciones</a>
           </li>
           <li className="hover:text-[#f47f21] transition-all duration-300">
-            <a href="#">Blog</a>
+            <a>Blog</a>
           </li>
         </ul>
-        <ul className="flex gap-3 text-3xl lg:text-base z-[20]">
+        <ul className="flex gap-3 text-3xl lg:text-base z-[20] [&>li>a]:cursor-pointer">
           <li className="hover:text-[#f47f21] transition-all duration-300">
-            <a href="#">
+            <a>
               <FiInstagram />
             </a>
           </li>
           <li className="hover:text-[#f47f21] transition-all duration-300">
-            <a href="#">
+            <a>
               <FaFacebookF />
             </a>
           </li>
           <li className="hover:text-[#f47f21] transition-all duration-300">
-            <a href="#">
+            <a>
               <BsYoutube />
             </a>
           </li>
           <li className="hover:text-[#f47f21] transition-all duration-300">
-            <a href="#">
+            <a>
               <FaLinkedinIn />
             </a>
           </li>

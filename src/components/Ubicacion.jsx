@@ -10,7 +10,7 @@ export const Ubicacion = () => {
         YAMA INSURGENTES REFORMA
       </h1>
       </div>
-        <div className="xl:flex gap-10" data-aos="fade-up">
+        <div className="xl:flex gap-10">
           <img
             src={mapa}
             alt="imagen de mapa"
@@ -21,8 +21,8 @@ export const Ubicacion = () => {
               Av. Insurgentes Sur 64, Juárez, Cuauhtémoc, 06600 Ciudad de
               México, CDMX, México
             </p>
-            <a href="#" className="text-[#f88c2d]">
-              Como llegar
+            <a className="text-[#f88c2d] cursor-pointer">
+              Cómo llegar
             </a>
           </div>
         </div>
