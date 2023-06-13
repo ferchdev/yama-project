@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { BsArrowLeft } from "react-icons/bs";
-export default function Carousel({
+export default function CarouselReforma({
   children: slides,
   autoSlide = false,
   autoSlideInterval = 3000,
@@ -30,16 +30,16 @@ export default function Carousel({
         {slides}
       </div>
       <div
-        className={`mx-auto w-fit lg:w-auto lg:mx-0 lg:float-right mt-3 [&>button]:transition-all [&>button]:duration-300`}
+        className={`mx-auto w-fit lg:w-auto lg:mx-0 lg:float-left mt-3 [&>button]:transition-all [&>button]:duration-300`}
       >
         <button
-          className={`border border-[#585f6d] text-[#585f6d] px-9 py-1 cursor-pointer hover:text-[#f58127]`}
+          className={`border border-[#585f6d] text-[#585f6d] px-8 py-[2px] cursor-pointer hover:text-[#f58127]`}
           onClick={() => prev()}
         >
           <BsArrowLeft size={40} />
         </button>
         <button
-          className={`border border-[#585f6d] text-[#585f6d] border-s-0 px-9 py-1 cursor-pointer hover:text-[#f58127]`}
+          className={`border border-[#585f6d] text-[#585f6d] border-s-0 px-8 py-[2px] cursor-pointer hover:text-[#f58127]`}
           onClick={() => next()}
         >
           <BsArrowRight size={40} />

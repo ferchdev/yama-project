@@ -8,6 +8,7 @@ import tour from "../assets/icons/360-grados.png";
 import SliderReforma from "./SliderReforma";
 import Carousel from "./Carousel";
 import { useState } from "react";
+import CarouselReforma from "./CarouselReforma";
 export const ReformaBanner = () => {
   const slider_data = [edificio1,edificio2,edificio3];
   const [index, setIndex] = useState(0);
@@ -42,13 +43,13 @@ export const ReformaBanner = () => {
           className="lg:h-[500px] xl:h-[400px] lg:w-[50%]"
           data-aos="fade-up" data-aos-duration="500"
         >
-          <Carousel float="left" px="8" py="[2px]" index={index} setIndex={setIndex}>
+          <CarouselReforma index={index} setIndex={setIndex}>
           {[
             ...slider_data.map((s, i) => (
               <img src={s} key={i} className="lg:h-[400px]" />
             )),
           ]}
-          </Carousel>
+          </CarouselReforma>
         </div>
         <div
           className="w-[100%] sm:w-[90%] mx-auto lg:mx-0 lg:w-[40%] mt-[50px] lg:mt-0 font-medium tracking-wider"
