@@ -2,7 +2,7 @@ import mapa from "../assets/images/map.png";
 export const Ubicacion = () => {
   return (
     <section className="ubicacion pt-[90px] w-[90%] mx-auto max-w-[1366px]">
-      <div data-aos="fade-right">
+      <div data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
       <p className="font-semibold tracking-wider text-2xl lg:text-4xl text-start">
         Ubicación
       </p>
@@ -15,8 +15,9 @@ export const Ubicacion = () => {
             src={mapa}
             alt="imagen de mapa"
             className="w-full sm:h-[450px] object-cover"
+            data-aos="fade-up" data-aos-duration="500"
           />
-          <div className="col-span-1 text-lg lg:text-xl font-semibold tracking-wider leading-6 mt-[50px] xl:mt-0 sm:w-[60%] xl:w-auto">
+          <div className="col-span-1 text-lg lg:text-xl font-semibold tracking-wider leading-6 mt-[50px] xl:mt-0 sm:w-[60%] xl:w-auto" data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-in-out" data-aos-delay="200">
             <p className="mb-5">
               Av. Insurgentes Sur 64, Juárez, Cuauhtémoc, 06600 Ciudad de
               México, CDMX, México
