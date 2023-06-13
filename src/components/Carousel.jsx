@@ -7,9 +7,9 @@ export default function Carousel({
   autoSlideInterval = 3000,
   index,
   setIndex,
-  float="right",
-  px="9",
-  py="1"
+  float = "right",
+  px = "9",
+  py = "1",
 }) {
   const prev = () =>
     setIndex((index) => (index === 0 ? slides.length - 1 : index - 1));
@@ -29,7 +29,9 @@ export default function Carousel({
       >
         {slides}
       </div>
-      <div className={`mx-auto w-fit lg:w-auto lg:mx-0 lg:float-${float} mt-3 [&>button]:transition-all [&>button]:duration-300`}>
+      <div
+        className={`mx-auto w-fit lg:w-auto lg:mx-0 lg:float-${float} mt-3 [&>button]:transition-all [&>button]:duration-300`}
+      >
         <button
           className={`border border-[#585f6d] text-[#585f6d] px-${px} py-${py} cursor-pointer hover:text-[#f58127]`}
           onClick={() => prev()}
