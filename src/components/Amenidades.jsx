@@ -28,7 +28,7 @@ export const Amenidades = () => {
         </div>
       </div>
       <div className="lg:w-[60%] lg:h-[600px] mt-[80px] lg:mt-[7%]" data-aos="fade-up" data-aos-duration="500">
-        <Carousel index={index} setIndex={setIndex}>
+        <Carousel index={index} setIndex={setIndex} float="right" px="9" py="1" >
           {[
             ...carousel_data.map((s, i) => (
               <img src={s.url} key={i} className="lg:h-[420px]" />

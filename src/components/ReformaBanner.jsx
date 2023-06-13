@@ -52,7 +52,7 @@ export const ReformaBanner = () => {
         </div>
         <div
           className="w-[100%] sm:w-[90%] mx-auto lg:mx-0 lg:w-[40%] mt-[50px] lg:mt-0 font-medium tracking-wider"
-          data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out"
+          data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-in-out"
         >
           <div>
           <h1 className="text-[#f58127] text-center lg:text-start text-2xl sm:text-3xl font-semibold tracking-wide">
