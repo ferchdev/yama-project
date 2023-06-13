@@ -25,7 +25,7 @@ export const Header = () => {
   };
   return (
     <header
-      className="w-full bg-primary h-[80px] fixed z-[999999999999]"
+      className="w-full bg-primary h-[80px] fixed z-[999999999999] hidden lock:block"
       data-aos="fade-down"
     >
       <nav className="w-[95%] h-full mx-auto flex justify-between items-center">
@@ -68,7 +68,6 @@ export const Header = () => {
             </span>
             <li className="borderNav ps-7 pe-4 ">
               <a
-              
                 className="h-full flex items-center cursor-pointer"
                 onMouseOver={() =>
                   handleOnMouseover(degradedRef2, arrowRef2, underline2)
@@ -99,7 +98,6 @@ export const Header = () => {
             </span>
             <li className="px-7 flex items-center">
               <a
-              
                 className="h-full flex items-center cursor-pointer"
                 onMouseOver={() => {
                   underline3.current.classList.remove("after:w-0");
@@ -108,8 +106,7 @@ export const Header = () => {
                 onMouseLeave={() => {
                   underline3.current.classList.remove("after:w-[70%]");
                   underline3.current.classList.add("after:w-0");
-                }
-                }
+                }}
               >
                 <span
                   className="relative after:absolute after:content-[' '] after:bottom-0 after:h-[1px] after:bg-white after:w-0 after:left-0 after:right-0 after:mx-auto after:transition-all after:duration-300"
@@ -120,10 +117,7 @@ export const Header = () => {
               </a>
             </li>
           </ul>
-          <a
-            className="button glow-button h-[65%] flex justify-center items-center px-4 rounded-md bg-[#161b24] text-[#e08637]  hover:bg-[#e08637]  hover:text-[#161b24] transition-all duration-300 cursor-pointer"
-          
-          >
+          <a className="button glow-button h-[65%] flex justify-center items-center px-4 rounded-md bg-[#161b24] text-[#e08637]  hover:bg-[#e08637]  hover:text-[#161b24] transition-all duration-300 cursor-pointer">
             <span className="text-[#ffffffd2]">Menu</span>
             <RxHamburgerMenu className="ms-3" size={25} />
           </a>

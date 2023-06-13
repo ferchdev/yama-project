@@ -24,13 +24,10 @@ export const Footer = () => {
   return (
     <>
       <footer
-        className="footer relative overflow-hidden mt-[60px] pt-7 pb-2 bg-primary text-white flex flex-col gap-12 md:flex-row lg:flex-col px-8 lg:px-0 justify-between lg:justify-center lg:gap-7 items-center z-[999999999999999999999999999]"
+        className="footer relative overflow-hidden mt-[60px] pt-7 pb-2 bg-primary text-white  flex-col gap-12 md:flex-row lg:flex-col px-8 lg:px-0 justify-between lg:justify-center lg:gap-7 items-center z-[999999999999999999999999999] hidden lock:flex"
         id="footer"
       >
-        <img
-          src={logo}
-          className=" w-[120px] lg:w-[80px] z-[20]"
-        />
+        <img src={logo} className=" w-[120px] lg:w-[80px] z-[20]" />
         <ul className="text-center  text-xl flex flex-col gap-4 md:text-start lg:flex lg:flex-row md:grid md:grid-cols-2 md:text-lg tracking-wider md:gap-x-16 md:gap-y-2 md:lg:gap-7 z-[20] [&>li>a]:cursor-pointer">
           <li className="hover:text-[#f47f21] transition-all duration-300">
             <a>Inicio</a>
@@ -76,7 +73,10 @@ export const Footer = () => {
             </a>
           </li>
         </ul>
-        <img src={logo2} className="hidden lg:block absolute top-0 left-0 z-[1] w-[320px]"/>
+        <img
+          src={logo2}
+          className="hidden lg:block absolute top-0 left-0 z-[1] w-[320px]"
+        />
       </footer>
       <BottomBar hidden={isVisible} />
     </>

@@ -5,7 +5,7 @@ import { TfiEmail } from "react-icons/tfi";
 export const BottomBar = ({hidden = false}) => {
   return (
     <section
-      className={`${hidden && "hidden"} bottom-bar fixed flex flex-col gap-1 bottom-[25px] text-white w-fit left-0 right-0 mx-auto transition-all duration-500`}
+      className={`${hidden && "hidden"} bottom-bar fixed hidden lock:flex flex-col gap-1 bottom-[25px] text-white w-fit left-0 right-0 mx-auto transition-all duration-500`}
       data-aos="fade-up"
       data-aos-offset="-200"
     >

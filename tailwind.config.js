@@ -13,6 +13,9 @@ export default {
       },
       boxShadow: {
         'grow': '0 35px 60px -15px #e08637',
+      },
+      screens: {
+        'lock': '1200px',
       }
     },
   },

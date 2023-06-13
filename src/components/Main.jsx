@@ -5,12 +5,12 @@ import { ReformaBanner } from "./ReformaBanner";
 import { Ubicacion } from "./Ubicacion";
 export const Main = () => {
   return (
-    <main>
-        <HomeBanner/>
-        <HomeParallax/>
-        <ReformaBanner/>
-        <Amenidades/>
-        <Ubicacion/>
+    <main className="hidden lock:block">
+      <HomeBanner />
+      <HomeParallax />
+      <ReformaBanner />
+      <Amenidades />
+      <Ubicacion />
     </main>
   );
 };
